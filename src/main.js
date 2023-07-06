@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const abaAlvo = botao.target.dataset.tabButton;
             const aba = document.querySelector(`[data-tab-id=${abaAlvo}]`);
             escondeTodasAbas();
-            aba.classlist.add('shows__list--is-active'); 
+            aba.classList.add('shows__list--is-active'); 
             removeBotaoAtivo();
-            botao.target.classlist.add('shows__tabs__button--is-active')
+            botao.target.classList.add('shows__tabs__button--is-active')
         })
     }
 })

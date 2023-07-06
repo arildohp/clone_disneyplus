@@ -2,6 +2,7 @@
 
 .shows {
     padding: 2vw 5.6vw;
+    min-height: 50vw;
 
     &__list{
         margin-top: 44px;
@@ -35,11 +36,53 @@
             text-transform: uppercase;
             margin: 0 1vw;
             cursor: pointer;
-            border-bottom: 5px solid transparent
+            border-bottom: 5px solid transparent;
 
             &--is-active{
-                border-color:  variaveis.$corTextoSecundario;
+                border-color: variaveis.$corTextoSecundario;
             }
         }
     }
+}
+
+
+.plans {
+    padding: 5.6vw;
+
+    h2{
+        text-align: center;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    
+
+        &__item{
+            text-align: center;
+            padding: 60px 44px 44px;
+            max-width: 380px;
+            width: 100%;
+
+            &:nth-child(2) {
+                background-image: url(../images/fundo_combo_plus.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            img{
+                height: 83px;
+            }
+
+            strong{
+                display: block;
+                margin-top: 24px;
+            }
+       }
+   }
+}
+
+p{
+    text-align: center;
 }
